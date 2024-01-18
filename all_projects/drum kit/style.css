@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(164, 213, 255);
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px ;
+    text-shadow: 0 2px 8px rgb(255, 179, 214);
+    white-space: nowrap;
+}
+.box{
+    text-align: center;
+}
+
+.btn{
+   text-transform: capitalize;
+   background-color: white;
+   color: rgb(0, 42, 121);
+   text-shadow:  0 2px 8px rgb(39, 0, 0);
+   font-weight: 900;
+   -webkit-text-stroke: 1px white;
+   font-family: cursive;
+   padding:30px 50px ;
+   min-width:200px;
+   border: none;
+   border-radius: 10px;
+   font-size:30px;
+   margin: 10px;
+   box-shadow:0 2px 8px rgb(36, 15, 25) ;
+   background-image:url("images/snare.png") ;
+   background-size:contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   cursor: pointer;
+}
+
+.btn:hover{
+   border: 4px solid rgb(79, 0, 0);
+   
+}
+
+.btn:active{
+    background-size: 70%;
+    border-radius: 40px;
+}
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>charater counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="box" class="box">
+        <h2 class="head" id="head">Real-time Charater Counter</h2>
+        <textarea
+         id="text" onclick="this.value='';" onblur="if(this.value==''){this.value='Enter text here ...';}" maxlength="50" >Enter text here ...
+        </textarea>
+
+      <div class="counter">
+        <span id="total">Total Charater:0</span>
+        <span id="reaman">Reamaining:0</span>
+      </div> 
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

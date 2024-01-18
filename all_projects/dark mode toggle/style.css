@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.input{
+    visibility:hidden;
+}
+.lab{
+    position: absolute;
+    width: 160px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: gray;
+    cursor: pointer;
+    box-shadow: 0 4px 9px black;
+}
+
+.circle{
+    width: 72px;
+    height: 72px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 50%;
+    box-shadow: 2px 0px 8px rgb(0, 0, 0);
+    animation: off .4s linear forwards;
+}
+
+.input:checked + .lab{
+    background-color: aqua;
+    box-shadow: 2px 1px 20px aqua;
+    transition: 1s;
+
+
+}
+.input:checked + .lab .circle{
+    animation: on .4s linear forwards;
+    box-shadow: 2px 0px 9px black;
+    transition: 1s;
+}
+
+@keyframes on {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(80px);
+    }
+    
+}
+
+@keyframes off {
+    0%{
+        transform: translateX(80px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+    
+}
