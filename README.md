@@ -20,7 +20,7 @@ Before you start, ensure you have the following installed:
 Each project has its own folder . 
 
 
-                                                                      --## AUTHOR- AYAZ KHAN
+                                                                      ## AUTHOR- AYAZ KHAN
 
 
 
